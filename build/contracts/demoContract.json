@@ -1,0 +1,323 @@
+{
+  "contractName": "demoContract",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "hi",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"hi\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/decoders/soli/demo/contracts/demoContract.sol\":\"demoContract\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/decoders/soli/demo/contracts/demoContract.sol\":{\"keccak256\":\"0xefcb2ae44b40d97bd950d447ebf1d8f42070d067d1c0aadd9ae8bf09383385b4\",\"urls\":[\"bzz-raw://688bf21985cbe3fe5204150f37141ed43d6aabbd6bc9a7996f14a590d546c9de\",\"dweb:/ipfs/Qmbg3UDTxCTu9SwBH1d4bPpJ7JUGqVM93XMc44pEZrBz5K\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061011d806100206000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063a99dca3f14602d575b600080fd5b603360ab565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101560715780820151818401526020810190506058565b50505050905090810190601f168015609d5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040518060400160405280600a81526020017f68656c6c6f776f726c640000000000000000000000000000000000000000000081525090509056fea265627a7a72315820ec42da2a7e9c242d6b33ec0e1d6f16aeff7a2915569b1755ab986ed18e99e26a64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063a99dca3f14602d575b600080fd5b603360ab565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101560715780820151818401526020810190506058565b50505050905090810190601f168015609d5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040518060400160405280600a81526020017f68656c6c6f776f726c640000000000000000000000000000000000000000000081525090509056fea265627a7a72315820ec42da2a7e9c242d6b33ec0e1d6f16aeff7a2915569b1755ab986ed18e99e26a64736f6c63430005100032",
+  "sourceMap": "25:116:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:116:1;;;;;;;",
+  "deployedSourceMap": "25:116:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:116:1;;;;;;;;;;;;;;;;;;;53:86;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;53:86:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;88:13;113:19;;;;;;;;;;;;;;;;;;;53:86;:::o",
+  "source": "pragma solidity >0.4.18;\ncontract demoContract {\n    function hi() public pure returns (string memory) {\n        return \"helloworld\";\n    }\n}",
+  "sourcePath": "/home/decoders/soli/demo/contracts/demoContract.sol",
+  "ast": {
+    "absolutePath": "/home/decoders/soli/demo/contracts/demoContract.sol",
+    "exportedSymbols": {
+      "demoContract": [
+        43
+      ]
+    },
+    "id": 44,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 34,
+        "literals": [
+          "solidity",
+          ">",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 43,
+        "linearizedBaseContracts": [
+          43
+        ],
+        "name": "demoContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 41,
+              "nodeType": "Block",
+              "src": "103:36:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "68656c6c6f776f726c64",
+                    "id": 39,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "120:12:1",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_fa26db7ca85ead399216e7c6316bc50ed24393c3122b582735e7f3b0f91b93f0",
+                      "typeString": "literal_string \"helloworld\""
+                    },
+                    "value": "helloworld"
+                  },
+                  "functionReturnParameters": 38,
+                  "id": 40,
+                  "nodeType": "Return",
+                  "src": "113:19:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 42,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "hi",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 35,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "64:2:1"
+            },
+            "returnParameters": {
+              "id": 38,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 37,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 42,
+                  "src": "88:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 36,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "88:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "87:15:1"
+            },
+            "scope": 43,
+            "src": "53:86:1",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 44,
+        "src": "25:116:1"
+      }
+    ],
+    "src": "0:141:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/decoders/soli/demo/contracts/demoContract.sol",
+      "exportedSymbols": {
+        "demoContract": [
+          43
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">",
+            "0.4",
+            ".18"
+          ]
+        },
+        "id": 34,
+        "name": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            43
+          ],
+          "name": "demoContract",
+          "scope": 44
+        },
+        "children": [
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "hi",
+              "scope": 43,
+              "stateMutability": "pure",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 35,
+                "name": "ParameterList",
+                "src": "64:2:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 42,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 36,
+                        "name": "ElementaryTypeName",
+                        "src": "88:6:1"
+                      }
+                    ],
+                    "id": 37,
+                    "name": "VariableDeclaration",
+                    "src": "88:13:1"
+                  }
+                ],
+                "id": 38,
+                "name": "ParameterList",
+                "src": "87:15:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 38
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "68656c6c6f776f726c64",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "string",
+                          "type": "literal_string \"helloworld\"",
+                          "value": "helloworld"
+                        },
+                        "id": 39,
+                        "name": "Literal",
+                        "src": "120:12:1"
+                      }
+                    ],
+                    "id": 40,
+                    "name": "Return",
+                    "src": "113:19:1"
+                  }
+                ],
+                "id": 41,
+                "name": "Block",
+                "src": "103:36:1"
+              }
+            ],
+            "id": 42,
+            "name": "FunctionDefinition",
+            "src": "53:86:1"
+          }
+        ],
+        "id": 43,
+        "name": "ContractDefinition",
+        "src": "25:116:1"
+      }
+    ],
+    "id": 44,
+    "name": "SourceUnit",
+    "src": "0:141:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x4057e1bC6E1DcED924839AdDc4C5EE4d90905731",
+      "transactionHash": "0xf6ea8597f31b461b81243bf605083a5e89342517ef5adf09c16b12afeb8ac12e"
+    }
+  },
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2020-12-30T06:38:29.485Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
