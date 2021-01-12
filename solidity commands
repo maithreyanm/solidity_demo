@@ -1,0 +1,41 @@
+truffle commands
+
+
+truffle init 		>to get/create project like structre in local
+truffle create contract <name>		> to create a contract.sol in local under contracts folder
+truffle compile		> to compile the code
+
+
+create a 2_deploy_contracts.js in migrations folder 
+
+##########
+var HelloWorld=artifacts.require (“./HelloWorld.sol”);
+module.exports = function(deployer) {
+      deployer.deploy(HelloWorld);
+}
+###########
+
+use the above block of code to start deploying
+
+truffle-config.js file 
+
+########
+module.exports = 
+{
+  networks:
+  {
+    development:
+    {
+      host: "localhost",
+      port: 8545,
+      network_id: "*"
+    }
+  }
+};
+
+############
+
+
+
+truffle migrate >> making the deployment transaction
+
